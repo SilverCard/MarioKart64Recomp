@@ -20,6 +20,7 @@ build/
 *.dll
 *.lib
 *.pdb
+out/
 
 # User-specific files
 *.rsuser

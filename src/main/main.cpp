@@ -308,7 +308,7 @@ void reset_audio(uint32_t output_freq) {
     update_audio_converter();
 }
 
-extern RspUcodeFunc njpgdspMain;
+//extern RspUcodeFunc njpgdspMain;
 extern RspUcodeFunc aspMain;
 
 RspUcodeFunc* get_rsp_microcode(const OSTask* task) {
@@ -316,8 +316,8 @@ RspUcodeFunc* get_rsp_microcode(const OSTask* task) {
     case M_AUDTASK:
         return aspMain;
 
-    case M_NJPEGTASK:
-        return njpgdspMain;
+    //case M_NJPEGTASK:
+    //    return njpgdspMain;
 
     default:
         fprintf(stderr, "Unknown task: %" PRIu32 "\n", task->t.type);
@@ -331,9 +331,9 @@ gpr get_entrypoint_address();
 // array of supported GameEntry objects
 std::vector<recomp::GameEntry> supported_games = {
     {
-        .rom_hash = 0xEF18B4A9E2386169ULL,
-        .internal_name = "ZELDA MAJORA'S MASK",
-        .game_id = u8"mm.n64.us.1.0",
+        .rom_hash = 0x54572403569b87c1ULL,
+        .internal_name = "MARTIO KART 64",
+        .game_id = u8"mk64.us",
 #ifdef HAS_MM_SHADER_CACHE
         .cache_data = {mm_shader_cache_bytes, sizeof(mm_shader_cache_bytes)},
 #endif

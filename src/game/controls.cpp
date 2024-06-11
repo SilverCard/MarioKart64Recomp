@@ -104,7 +104,8 @@ void recomp::get_n64_input(uint16_t* buttons_out, float* x_out, float* y_out) {
                 - recomp::get_input_analog(keyboard_input_mappings[(size_t)GameInput::Y_AXIS_NEG]) + joystick_y;
     }
 
-    *buttons_out = cur_buttons;
+    *buttons_out = cur_buttons; 
+
     *x_out = std::clamp(cur_x, -1.0f, 1.0f);
     *y_out = std::clamp(cur_y, -1.0f, 1.0f);
 }

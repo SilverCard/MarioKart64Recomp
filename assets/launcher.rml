@@ -14,24 +14,12 @@
 	<body>
 		<div id="window" data-model="launcher_model">
 			<div class="launcher">
-				<div class="launcher__vertical-split">
-					<div class="launcher__title-quadrant">
-						<button class="subtitle-title" disabled>
-							<div><h3>Zelda 64: Recompiled</h3></div>
-							<div><h1>Ocarina of Time</h1></div>
-							<div class="subtitle-title__disclaimer">Coming Soon™</div>
-						</button>
-					</div>
-					<div class="launcher__content-quadrant"></div>
-				</div>
 				<div class="launcher__vertical-split launcher__vertical-split--right">
 					<div class="launcher__background-wrapper">
-						<svg src="mm-clipped.svg" class="launcher__background-mm" />
 					</div>
 					<div class="launcher__title-quadrant launcher__title-quadrant--right">
 						<button class="subtitle-title subtitle-title--right" selected>
-							<div><h3>Zelda 64: Recompiled</h3></div>
-							<div><h1>Majora's Mask</h1></div>
+							<div><h3>Mario Kart 64: Recompiled</h3></div>
 						</button>
 					</div>
 					<div class="launcher__content-quadrant">
